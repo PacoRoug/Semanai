@@ -1,3 +1,6 @@
+import 'bootstrap/dist/css/bootstrap.min.css' ;
+import 'bootstrap';
+
 body{
   background: #fff:
   padding: 0px;
@@ -6,11 +9,7 @@ body{
   font-size: 16px;
 }
 
-header{
-  display: block;
-  color: #fff;
-  background: #9299a3;
-}
+
 
 input. button{
   font-family: Roboto;
@@ -23,6 +22,11 @@ input. button{
   margin-top: 150px
   padding: 20px;
   display: none;
+  font-family: 'Patua One', cursive;
+}
+
+h3{
+  font-family: 'Patua One', cursive;
 }
 
 .main-div input{
