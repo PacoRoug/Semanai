@@ -1,3 +1,6 @@
+import 'bootstrap/dist/css/bootstrap.min.css' ;
+import 'bootstrap';
+
 function options(evt, option) {
     // Declare all variables
     var i, tabcontent, tablinks;

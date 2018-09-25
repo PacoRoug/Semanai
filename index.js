@@ -1,5 +1,4 @@
-import 'bootstrap/dist/css/bootstrap.min.css' ;
-import 'bootstrap';
+
 
 
 // Get the modal
@@ -89,6 +88,6 @@ function signup(){
     var errorMessage = error.message;
     // ...
   });
-    window.alert("Registration completed ");
+    window.alert("Hola: ");
 
 }
