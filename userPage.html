@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <header class="container col-12"><img src="logo.png" ><p></p></header>
+  <title>User</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+  <link rel="stylesheet" href="user.css"/>
+</head>
+<body>
+
+<div class="search container col-3 text-center">
+  <h1>Get your medicine's info</h1>
+  <p>This is some text.</p>
+    <input class="code_box" type="code" placeholder="Place your code here" id= "med_code"/>
+</div>
+<div class="container col-12 text-center">
+  <button class="buttonSearch"><h4>Search</h4></button>
+
+</div>
+<p></p>
+
+<div class="container col-12 text-left">
+  <h1>Information about your medicine</h1>
+
+</div>
+
+<div class= "container col 6">
+<!-- Tab links -->
+<div class="tab">
+  <button class="tablinks" onclick="options(event, 'tests')">Tests</button>
+  <button class="tablinks" onclick="options(event, 'location')">Location</button>
+  <button class="tablinks" onclick="options(event, 'tracking')">Tracking</button>
+  <button class="tablinks" onclick="options(event, 'input')">Input</button>
+</div>
+
+<!-- Tab content -->
+<div id="tests" class="tabcontent">
+
+  <p>Tests approved by my medicine.</p>
+</div>
+
+<div id="location" class="tabcontent">
+
+  <p>Here's your medication right now</p>
+</div>
+
+<div id="tracking" class="tabcontent">
+
+  <p>Here's where your order's been.</p>
+</div>
+
+<div id="input" class="tabcontent">
+
+  <p> Tell us how you've felt since you take our medicine</p>
+</div>
+</div>
+
+
+
+<script src="user.js"></script>
+</body>
+</html>
