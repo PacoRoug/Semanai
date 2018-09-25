@@ -31,7 +31,7 @@ firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
       document.getElementById("user_div").style.display ="block";// User is signed in.
       document.getElementById("login_div").style.display ="none";
-
+        document.getElementById("myBtn").style.display ="none";
       var user= firebase.auth().currentUser;
 
       if(user != null){
@@ -42,6 +42,7 @@ firebase.auth().onAuthStateChanged(function(user) {
   } else {
     document.getElementById("user_div").style.display ="none";// User is signed in.
     document.getElementById("login_div").style.display ="block";
+
   }
 });
 
