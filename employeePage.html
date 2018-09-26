@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <header class="container col-2 text-right"><img src="logo.png" ><p></p>
+    <div id="employee_div" class= "loggedin-div col-5 text-right">
+      <h3> Welcome! </h3>
+      <p id= "employee_para"> Welcome to your Astra Zeneca web page </p>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </header>
+  <title>employee</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+  <link rel="stylesheet" href="employee.css"/>
+</head>
+<body>
+
+<div class="search container col-3 text-left">
+  <h1>Keep track of our products</h1>
+
+    <input class="code_box" type="code" placeholder="Place your code here" id= "med_code"/>
+</div>
+<div class="container col-12 text-center">
+  <button class="buttonSearch" onclick="search()"><h4>Search</h4></button>
+
+</div>
+<p></p>
+
+<div class="container col-12 text-left">
+  <h1>Information about the product</h1>
+
+</div>
+
+<div class= "container col-6">
+<!-- Tab links -->
+<div class="tab">
+  <button class="tablinks" onclick="options(event, 'tracking')">Tracking</button>
+  <button class="tablinks" onclick="options(event, 'inform')">Inform</button>
+  <button class="tablinks" onclick="options(event, 'callback')">Callback</button>
+  <button class="tablinks" onclick="options(event, 'comments')">Comments</button>
+</div>
+
+<!-- Tab content -->
+
+<div id="tracking" class="tabcontent">
+
+  <p>Here's the location of the product</p>
+</div>
+<div id="inform" class="tabcontent">
+
+  <p>Information about the product.</p>
+</div>
+
+<div id="callback" class="tabcontent">
+
+  <p>Specify the product you're going to call back</p>
+  <input class="inputBox" type="text" name="input" id= "product_Callback"><br>
+  <p>Specify the reason for the Callback</p>
+  <input class="inputBox" type="text" name="input" id= "reason_Callback"><br>
+  <button onclick="submit()" id= "input_button"> Submit </button>
+</div>
+
+
+
+<div id="comments" class="tabcontent">
+
+  <p> This is the feedback from our customers</p>
+
+</div>
+</div>
+
+<footer>
+
+  <div class=" col-12 text-right">
+  <p>© AstraZeneca 2018</p>
+  <p>Contact information: Sweden
+  Tel: <a href="astrazeneca.com">
+     +46 (0)8 402 9000</a>.</p>
+  </div>
+</footer>
+
+<script src="employee.js"></script>
+</body>
+</html>
