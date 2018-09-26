@@ -1,6 +1,4 @@
 
-
-
 // Get the modal
 var modal = document.getElementById('myModal');
 
@@ -90,6 +88,6 @@ function signup(){
     var errorMessage = error.message;
     // ...
   });
-    window.alert("Hola: ");
+    window.alert("You're now regidstered ");
 
 }

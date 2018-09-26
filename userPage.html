@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <header class="container col-12"><img src="logo.png" ><p></p></header>
+  <header class="container col-2 text-right"><img src="logo.png" ><p></p>
+    <div id="user_div" class= "loggedin-div col-5 text-right">
+      <h3> Welcome! </h3>
+      <p id= "user_para"> Welcome to your Astra Zeneca web page </p>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </header>
   <title>User</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,7 +25,7 @@
     <input class="code_box" type="code" placeholder="Place your code here" id= "med_code"/>
 </div>
 <div class="container col-12 text-center">
-  <button class="buttonSearch"><h4>Search</h4></button>
+  <button class="buttonSearch" onclick="search()"><h4>Search</h4></button>
 
 </div>
 <p></p>
@@ -29,7 +35,7 @@
 
 </div>
 
-<div class= "container col 6">
+<div class= "container col-6">
 <!-- Tab links -->
 <div class="tab">
   <button class="tablinks" onclick="options(event, 'tests')">Tests</button>
@@ -57,6 +63,8 @@
 <div id="input" class="tabcontent">
 
   <p> Tell us how you've felt since you take our medicine</p>
+  <input class="inputBox" type="text" name="input"><br>
+  <button onclick="submit()" id= "input_button"> Submit </button>
 </div>
 </div>
 

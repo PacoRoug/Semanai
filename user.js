@@ -20,3 +20,13 @@ function options(evt, option) {
     document.getElementById(option).style.display = "block";
     evt.currentTarget.className += " active";
 }
+
+function search(){
+  var code= document.getElementById("med_code").value;
+
+  window.alert(code);
+}
+
+function submit(){
+  window.alert("Thank you for your feedback.");
+}
