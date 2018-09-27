@@ -24,7 +24,7 @@ function options(evt, option) {
 function search(){
   var code= document.getElementById("med_code").value;
 
-  window.alert(code);
+
 }
 
 function submit(){

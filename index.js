@@ -66,7 +66,7 @@ firebase.auth().signInWithEmailAndPassword(userEmail, userPass).catch(function(e
     window.alert("Error: "+ errorMessage);
 });
 
-window.open ("file:///C:/Users/Paco/Desktop/Web%20development/Semanai/userPage.html","mywindow");
+
 }
 
 
