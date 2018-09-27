@@ -1,76 +1,151 @@
 <!DOCTYPE html>
+
 <html>
+
   <head>
+
     <header>
+
       <div class="container col-6 text-right">
+
       <img src="logo.png" ><p></p>
+
     </div>
+
     </header>
+
     <meta charset="utf-8">
+
     <title> Login </title>
+
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css"/>
+
   </head>
+
   <body>
 
+
+
     <div id='login_div' class="main-div">
+
       <h2> Log in </h2>
+
       <input type="email" placeholder="Email" id= "email_field"/>
+
       <input type="password" placeholder="Password" id= "password_field"/>
+
       <button onclick="login()"> Login to account </button>
 
+
+
     </div>
 
+
+
     <div id="user_div" class= "loggedin-div">
+
       <h3> Welcome User </h3>
+
       <p id= "user_para"> Welcome to Astra </p>
+
       <button onclick="logout()">Logout</button>
+
     </div>
+
+
 
     <p></p>
 
+
+
     <div class="buttonSignIn">
+
     <button id="myBtn" class="signupButton">Sign Up!</button>
+
     </div>
+
     <!-- The Modal -->
+
     <div id="myModal" class="modal">
 
+
+
     <!-- Modal content -->
+
       <div class="modal-content">
+
         <h3> Sign Up </h3>
+
         <input type="Name" placeholder="Name" id= "Name_sign"/>
+
         <input type="Last Name" placeholder="Last Name" id= "LastName_sign"/>
+
         <input type="Username" placeholder="UserName" id= "Username_sign"/>
+
         <input type="email" placeholder="Email" id= "email_sign"/>
+
         <input type="password" placeholder="Password" id= "password_sign"/>
+
         <button onclick="signup()"> Sign Up </button>
+
         <span class="close">&times;</span>
+
       </div>
 
+
+
     </div>
+
+
+
+
+
 
 
 
 
   <script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
+
   <script>
+
   // Initialize Firebase
+
   var config = {
+
     apiKey: "AIzaSyDgk2xMvcm9lKe9_PDkcInq7d39mrqcWdU",
+
     authDomain: "login-astra.firebaseapp.com",
+
     databaseURL: "https://login-astra.firebaseio.com",
+
     projectId: "login-astra",
+
     storageBucket: "",
+
     messagingSenderId: "321072581757"
+
   };
+
   firebase.initializeApp(config);
+
   </script>
+
+
 
   <script src="index.js"></script>
 
 
 
 
+
+
+
+
+
   </body>
+
 </html>
