@@ -88,6 +88,6 @@ function signup(){
     var errorMessage = error.message;
     // ...
   });
-    window.alert("You're now regidstered ");
+    window.alert("You're now registered ");
 
 }

@@ -1,0 +1,87 @@
+
+body{
+  background: #fff:
+  padding: 0px;
+  margin: 0px;
+  font-family:  fantasy;
+  font-size: 19px;
+}
+
+
+
+input. button{
+
+  font-weight: 700;
+}
+
+.main-div, .loggedin-div{
+  width: 20%;
+  margin: 0px auto;
+  margin-top: 150px
+  padding: 20px;
+
+
+}
+
+h3{
+  font-family: 'Patua One', cursive;
+}
+
+
+
+.main-div button{
+  background: #5d8ffc;
+  color: #fff;
+  border: 0px;
+  border-radius: 5px;
+  padding: 15px;
+  display: block;
+  width: 100%;
+  transition: 0.3s;
+  .webkit-transition: 0.3s;
+  .moz-transition: 0.3s;
+
+
+}
+.loggedin-div button{
+  background: #5d8ffc;
+  color: #fff;
+  border: 0px;
+  border-radius: 5px;
+  padding: 15px;
+  display: block;
+  width: 100%;
+  transition: 0.3s;
+  .webkit-transition: 0.3s;
+  .moz-transition: 0.3s;
+}
+
+.signupButton {
+  background: #5d8ffc;
+  color: #fff;
+  border: 0px;
+  border-radius: 5px;
+  padding: 15px;
+  display: block;
+  width: 50%;
+  transition: 0.3s;
+  .webkit-transition: 0.3s;
+  .moz-transition: 0.3s;
+  width: 20%;
+  margin: 0px auto;
+  margin-top: 150px
+  padding: 20px;
+
+
+
+}
+.buttonSignIn button:hover{
+    background: #fff;
+    color: #5d8ffc;
+    border:10px solic #000;
+}
+.main-div button:hover{
+    background: #fff;
+    color: #5d8ffc;
+    border:10px solic #000;
+}

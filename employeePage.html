@@ -49,10 +49,40 @@
 <div id="tracking" class="tabcontent">
 
   <p>Here's the location of the product</p>
+
+  <table style="width:100%">
+  <tr>
+    <th>Date</th>
+    <th>Place</th>
+    <th>Status</th>
+  </tr>
+  <tr>
+    <td>18/09/18</td>
+    <td>Sweden</td>
+    <td>Shipped</td>
+  </tr>
+  <tr>
+    <td>19/09/18</td>
+    <td>U.S.</td>
+    <td>Received at the airport</td>
+  </tr>
+  <tr>
+    <td>22/09/18</td>
+    <td>U.S.</td>
+    <td>In transit</td>
+  </tr>
+  <tr>
+    <td>22/09/18</td>
+    <td>U.S.</td>
+    <td>Delivered</td>
+  </tr>
+</table>
 </div>
 <div id="inform" class="tabcontent">
 
   <p>Information about the product.</p>
+  <p>Last produced in Sweden, Gothenburg 17/08/18.</p>
+
 </div>
 
 <div id="callback" class="tabcontent">
@@ -69,7 +99,29 @@
 <div id="comments" class="tabcontent">
 
   <p> This is the feedback from our customers</p>
+  <table style="width:100%">
+  <tr>
+    <th>Date</th>
+    <th>User</th>
+    <th>Comment</th>
+  </tr>
+  <tr>
+    <td>18/07/18</td>
+    <td>John Doe</td>
+    <td>I've felt much better</td>
+  </tr>
+  <tr>
+    <td>19/03/18</td>
+    <td>Andrew Smith</td>
+    <td>It's great</td>
+  </tr>
+  <tr>
+    <td>22/08/18</td>
+    <td>Will Young</td>
+    <td>Makes me sleepy</td>
+  </tr>
 
+</table>
 </div>
 </div>
 
@@ -77,12 +129,31 @@
 
   <div class=" col-12 text-right">
   <p>© AstraZeneca 2018</p>
-  <p>Contact information: Sweden
+  <p>Contact information:Gothenburg, Sweden
   Tel: <a href="astrazeneca.com">
      +46 (0)8 402 9000</a>.</p>
   </div>
 </footer>
 
+
+
+
+<script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
+<script>
+// Initialize Firebase
+var config = {
+  apiKey: "AIzaSyDgk2xMvcm9lKe9_PDkcInq7d39mrqcWdU",
+  authDomain: "login-astra.firebaseapp.com",
+  databaseURL: "https://login-astra.firebaseio.com",
+  projectId: "login-astra",
+  storageBucket: "",
+  messagingSenderId: "321072581757"
+};
+firebase.initializeApp(config);
+</script>
+
 <script src="employee.js"></script>
+
+
 </body>
 </html>

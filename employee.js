@@ -30,3 +30,10 @@ function search(){
 function submit(){
   window.alert("Your request is being reviewed.");
 }
+
+function logout(){
+
+  
+    firebase.auth().signOut();
+
+}
